@@ -15,18 +15,22 @@ public class FizzBuzz {
     public String getFizzBuzz(final int num) {
         if ((num % 3 == 0) && (num % 5 == 0)) {
             return "FizzBuzz";
-        }
-       else if ((num % 3 == 0) || (digitTest(num, 3))) {
+        } else if ((num % 3 == 0) || (digitTest(num, 3))) {
             return "Fizz";
-        }
-        else if ((num % 5 == 0) || (digitTest(num, 5))) {
+        } else if ((num % 5 == 0) || (digitTest(num, 5))) {
             return "Buzz";
-        }
-        else  if ((num % 3 == 0) && (num % 5 == 0)) {
+        } else if ((num % 3 == 0) && (num % 5 == 0)) {
             return "FizzBuzz";
-        }
-        else {
+        } else {
             return String.valueOf(num);
+        }
+    }
+
+    public void printTillNum(final int num) {
+        if (num > 0) {
+            for (int i = 1; i <= num; i++) {
+                System.out.println(getFizzBuzz(i));
+            }
         }
     }
 }
