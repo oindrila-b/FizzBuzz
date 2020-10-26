@@ -16,6 +16,10 @@ public class FizzBuzz {
         if ((num % 3 == 0) || (digitTest(num, 3))) {
             return "Fizz";
         }
+        else if ((num % 5 == 0) || (digitTest(num, 5))) {
+            return "Buzz";
+        }
+
         return null;
     }
 }
