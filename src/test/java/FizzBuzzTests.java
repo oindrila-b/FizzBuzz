@@ -21,6 +21,11 @@ public class FizzBuzzTests {
         Assert.assertEquals(expected,fizzBuzz.getFizzBuzz(20));
     }
 
+    @Test
+    public void testBuzzNotEqual(){
+        final String expected = "Buzz";
+        Assert.assertNotEquals(expected,fizzBuzz.getFizzBuzz(17));
+    }
 
 
 
