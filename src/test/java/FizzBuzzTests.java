@@ -48,6 +48,12 @@ public class FizzBuzzTests {
         Assert.assertNotEquals(expected,fizzBuzz.getFizzBuzz(5));
     }
 
+    @Test
+    public void testNumberContainsThree() {
+        Assert.assertTrue(fizzBuzz.digitTest(13,3));
+    }
+
+
 
 
 
