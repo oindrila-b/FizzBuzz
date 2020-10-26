@@ -53,6 +53,11 @@ public class FizzBuzzTests {
         Assert.assertTrue(fizzBuzz.digitTest(13,3));
     }
 
+    @Test
+    public void testNumberDoesNotContainThree() {
+        Assert.assertFalse(fizzBuzz.digitTest(15,3));
+    }
+
 
 
 
