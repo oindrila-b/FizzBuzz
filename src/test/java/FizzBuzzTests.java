@@ -42,6 +42,12 @@ public class FizzBuzzTests {
         Assert.assertEquals(expected,fizzBuzz.getFizzBuzz(2));
     }
 
+    @Test
+    public void testNumberNotEqual(){
+        final String expected = "2";
+        Assert.assertNotEquals(expected,fizzBuzz.getFizzBuzz(5));
+    }
+
 
 
 
